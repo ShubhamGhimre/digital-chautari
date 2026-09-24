@@ -1,4 +1,14 @@
 import type { IconItem, RoadmapItem, TeamRole } from "@/lib/types";
+import {
+  Flame,
+  Lightbulb,
+  Award,
+  Handshake,
+  ClipboardList,
+  Lock,
+  Globe,
+  Flag,
+} from "lucide-react";
 
 export const ABOUT_TILES: { value: string; label: string; tone: "teal" | "navy" | "white" | "gold" }[] = [
   { value: "2025", label: "Founded", tone: "teal" },
@@ -8,17 +18,17 @@ export const ABOUT_TILES: { value: string; label: string; tone: "teal" | "navy" 
 ];
 
 export const VALUES: IconItem[] = [
-  { icon: "🔥", title: "Passion", text: "We care about the outcome as much as you do." },
-  { icon: "💡", title: "Creativity", text: "We look for the fresh angle before the familiar one." },
-  { icon: "🏅", title: "Excellence", text: "We check our work twice and ship it once." },
-  { icon: "🤝", title: "Collaboration", text: "Clients sit in our team, not outside it." },
+  { icon: Flame, title: "Passion", text: "We care about the outcome as much as you do." },
+  { icon: Lightbulb, title: "Creativity", text: "We look for the fresh angle before the familiar one." },
+  { icon: Award, title: "Excellence", text: "We check our work twice and ship it once." },
+  { icon: Handshake, title: "Collaboration", text: "Clients sit in our team, not outside it." },
 ];
 
 export const TRUST: IconItem[] = [
-  { icon: "📋", title: "ISO 9001 Ready", text: "Our processes are documented and built to meet quality-management standards." },
-  { icon: "🔒", title: "Data Protection", text: "Client data is access-controlled, backed up, and never reused." },
-  { icon: "🌍", title: "Global Delivery", text: "We work with clients and collaborators across time zones." },
-  { icon: "🇳🇵", title: "Pan‑Nepal Network", text: "Partners and creators in cities and districts across Nepal." },
+  { icon: ClipboardList, title: "ISO 9001 Ready", text: "Our processes are documented and built to meet quality-management standards." },
+  { icon: Lock, title: "Data Protection", text: "Client data is access-controlled, backed up, and never reused." },
+  { icon: Globe, title: "Global Delivery", text: "We work with clients and collaborators across time zones." },
+  { icon: Flag, title: "Pan‑Nepal Network", text: "Partners and creators in cities and districts across Nepal." },
 ];
 
 export const TEAM: TeamRole[] = [

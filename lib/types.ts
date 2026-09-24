@@ -1,17 +1,19 @@
+import type { LucideIcon } from "lucide-react";
+
 export interface IconItem {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
 }
 
 export interface Stat {
-  icon: string;
+  icon: LucideIcon;
   value: string;
   label: string;
 }
 
 export interface Teaser {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
 }
@@ -20,20 +22,20 @@ export type ProductSlug = "eco" | "studio" | "physio";
 
 export interface ProductTeaser {
   slug: ProductSlug;
-  icon: string;
+  icon: LucideIcon;
   category: string;
   title: string;
   text: string;
 }
 
 export interface Sector {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
 }
 
 export interface ProcessStep {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
 }
@@ -54,7 +56,7 @@ export interface BlogPost {
 }
 
 export interface ServiceCategory {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
   subServices: { title: string; text: string }[];
@@ -93,13 +95,13 @@ export interface RoadmapItem {
 }
 
 export interface ContactInfoItem {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
 }
 
 export interface Department {
-  icon: string;
+  icon: LucideIcon;
   name: string;
   email: string;
 }

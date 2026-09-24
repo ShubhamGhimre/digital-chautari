@@ -7,6 +7,7 @@ import { Pill } from "@/components/ui/Pill";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { SectionHead } from "@/components/ui/SectionHead";
+import { Star } from "lucide-react";
 import { chipColor } from "@/lib/constants";
 import {
   BLOG_POSTS,
@@ -155,10 +156,12 @@ export function Testimonials() {
       <div className="grid gap-5 md:grid-cols-3">
         {TESTIMONIALS.map((t, i) => (
           <CardShell key={t.name} as="figure" index={i} className="flex flex-col">
-            <span className="tracking-[2px] text-gold" aria-label="5 out of 5 stars">
-              ★★★★★
-            </span>
-            <blockquote className="mt-3 flex-1 text-[15px]">“{t.quote}”</blockquote>
+            <div className="flex gap-0.5 text-gold" aria-label="5 out of 5 stars">
+              {[...Array(5)].map((_, idx) => (
+                <Star key={idx} className="h-4 w-4 fill-current" />
+              ))}
+            </div>
+            <blockquote className="mt-3 flex-1 text-[15px]">&ldquo;{t.quote}&rdquo;</blockquote>
             <figcaption className="mt-5 flex items-center gap-3">
               <span
                 className="flex h-10 w-10 items-center justify-center rounded-full font-display font-bold text-teal-dark"

@@ -1,8 +1,20 @@
 import type { PricingTier, ServiceCategory } from "@/lib/types";
+import type { LucideIcon } from "lucide-react";
+import {
+  Megaphone,
+  Clapperboard,
+  Monitor,
+  HeartPulse,
+  ShoppingCart,
+  Home,
+  GraduationCap,
+  Mountain,
+  Newspaper,
+} from "lucide-react";
 
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
-    icon: "📣",
+    icon: Megaphone,
     title: "Digital Marketing",
     text: "Campaigns built around what your customers search for, scroll past, and click on.",
     subServices: [
@@ -13,7 +25,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     ],
   },
   {
-    icon: "🎬",
+    icon: Clapperboard,
     title: "Content Creation",
     text: "Stories told in video, photo, and words that fit your brand voice.",
     subServices: [
@@ -24,7 +36,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     ],
   },
   {
-    icon: "💻",
+    icon: Monitor,
     title: "Software Development",
     text: "Web and mobile products built to be maintained, not just launched.",
     subServices: [
@@ -42,13 +54,13 @@ export const PRICING_TIERS: PricingTier[] = [
   { name: "Enterprise", price: "Custom", per: "", blurb: "For organizations with larger or specialised needs.", features: ["Custom software development", "Full content production team", "Priority support and SLA", "Quarterly strategy workshops"], cta: "Talk to Sales" },
 ];
 
-export const INDUSTRIES: { icon: string; label: string }[] = [
-  { icon: "🏥", label: "Healthcare" },
-  { icon: "🛒", label: "E‑Commerce" },
-  { icon: "🏠", label: "Real Estate" },
-  { icon: "🎓", label: "Education" },
-  { icon: "🏔️", label: "Tourism" },
-  { icon: "📰", label: "Media" },
+export const INDUSTRIES: { icon: LucideIcon; label: string }[] = [
+  { icon: HeartPulse, label: "Healthcare" },
+  { icon: ShoppingCart, label: "E‑Commerce" },
+  { icon: Home, label: "Real Estate" },
+  { icon: GraduationCap, label: "Education" },
+  { icon: Mountain, label: "Tourism" },
+  { icon: Newspaper, label: "Media" },
 ];
 
 export const WHY_US: string[] = [

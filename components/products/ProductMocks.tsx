@@ -1,5 +1,6 @@
 import { Check } from "@/components/ui/Check";
 import { buttonClass } from "@/components/ui/Button";
+import { Stethoscope } from "lucide-react";
 import type { ProductSlug } from "@/lib/types";
 
 function EcoMock() {
@@ -65,7 +66,7 @@ function PhysioMock() {
     <div className="rounded-xl border border-line bg-white p-5">
       <div className="flex items-center gap-3">
         <span className="chip" style={{ background: "#E7F5EA" }} aria-hidden="true">
-          🩺
+          <Stethoscope className="h-5 w-5" />
         </span>
         <div>
           <div className="font-display text-[15px] font-semibold">Home session</div>

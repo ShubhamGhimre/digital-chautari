@@ -3,6 +3,7 @@ import { IconChip } from "@/components/ui/IconChip";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { SectionHead } from "@/components/ui/SectionHead";
+import { MapPin } from "lucide-react";
 import { CONTACT_INFO, DEPARTMENTS, RESPONSE_TIMES } from "@/lib/data/contact";
 
 export function ContactInfo() {
@@ -41,9 +42,7 @@ export function SidePanel() {
     <div className="space-y-5">
       <Reveal className="mapbox relative flex h-[220px] items-center justify-center overflow-hidden rounded-xl border border-line">
         <div className="text-center">
-          <div className="text-[34px]" aria-hidden="true">
-            📍
-          </div>
+          <MapPin className="mx-auto h-[34px] w-[34px] text-gold" aria-hidden="true" />
           <div className="font-display font-semibold">Kathmandu, Nepal</div>
           <div className="text-[13px] text-muted">Map coming soon</div>
         </div>

@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
+import type { LucideIcon } from "lucide-react";
 import { IconChip } from "@/components/ui/IconChip";
 import { Reveal } from "@/components/ui/Reveal";
 
 interface CardProps {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   text: string;
   index?: number;

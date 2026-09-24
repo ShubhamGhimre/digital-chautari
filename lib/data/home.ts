@@ -1,16 +1,41 @@
 import type { BlogPost, IconItem, ProcessStep, ProductTeaser, Sector, Stat, Teaser, Testimonial } from "@/lib/types";
+import {
+  Package,
+  Users,
+  CheckCheck,
+  TrendingUp,
+  Palette,
+  Settings,
+  Handshake,
+  Megaphone,
+  Clapperboard,
+  Monitor,
+  PenTool,
+  Leaf,
+  Video,
+  Stethoscope,
+  HeartPulse,
+  ShoppingCart,
+  Home,
+  GraduationCap,
+  Mountain,
+  Newspaper,
+  Search,
+  Wrench,
+  Rocket,
+} from "lucide-react";
 
 export const HOME_HERO_STATS: Stat[] = [
-  { icon: "📦", value: "3", label: "Products" },
-  { icon: "👥", value: "6+", label: "Team Members" },
-  { icon: "💯", value: "100%", label: "Commitment" },
+  { icon: Package, value: "3", label: "Products" },
+  { icon: Users, value: "6+", label: "Team Members" },
+  { icon: CheckCheck, value: "100%", label: "Commitment" },
 ];
 
 export const FEATURES: IconItem[] = [
-  { icon: "📈", title: "Growth‑Driven", text: "Every campaign and build is tied to numbers that matter to your business." },
-  { icon: "🎨", title: "Creative‑First", text: "Ideas that get noticed, shaped by storytellers and designers." },
-  { icon: "⚙️", title: "Tech‑Powered", text: "Modern engineering behind every website, app, and workflow." },
-  { icon: "🤝", title: "Client‑Centric", text: "One point of contact from the first call to launch and beyond." },
+  { icon: TrendingUp, title: "Growth‑Driven", text: "Every campaign and build is tied to numbers that matter to your business." },
+  { icon: Palette, title: "Creative‑First", text: "Ideas that get noticed, shaped by storytellers and designers." },
+  { icon: Settings, title: "Tech‑Powered", text: "Modern engineering behind every website, app, and workflow." },
+  { icon: Handshake, title: "Client‑Centric", text: "One point of contact from the first call to launch and beyond." },
 ];
 
 export const WHO_CHECKLIST: string[] = [
@@ -21,10 +46,10 @@ export const WHO_CHECKLIST: string[] = [
 ];
 
 export const SERVICE_TEASERS: Teaser[] = [
-  { icon: "📣", title: "Digital Marketing", text: "Search, social, and paid campaigns." },
-  { icon: "🎬", title: "Content Creation", text: "Video, photo, and written stories." },
-  { icon: "💻", title: "Software Development", text: "Web, mobile, and health-tech platforms." },
-  { icon: "✏️", title: "Branding & Design", text: "Identities that people remember." },
+  { icon: Megaphone, title: "Digital Marketing", text: "Search, social, and paid campaigns." },
+  { icon: Clapperboard, title: "Content Creation", text: "Video, photo, and written stories." },
+  { icon: Monitor, title: "Software Development", text: "Web, mobile, and health-tech platforms." },
+  { icon: PenTool, title: "Branding & Design", text: "Identities that people remember." },
 ];
 
 export const HOME_STATS: { value: string; label: string }[] = [
@@ -35,25 +60,25 @@ export const HOME_STATS: { value: string; label: string }[] = [
 ];
 
 export const PRODUCT_TEASERS: ProductTeaser[] = [
-  { slug: "eco", icon: "🌿", category: "Digital Marketing", title: "Eco Creative Marketing Agency", text: "Performance-minded marketing for brands that want sustainable, measurable growth." },
-  { slug: "studio", icon: "🎥", category: "Content Creation", title: "One Content Creation Studio", text: "A production studio for video, photography, and social content under one roof." },
-  { slug: "physio", icon: "🩺", category: "Health‑Tech", title: "Physio@Home", text: "Physiotherapy that comes to the patient, with booking and follow-up built in." },
+  { slug: "eco", icon: Leaf, category: "Digital Marketing", title: "Eco Creative Marketing Agency", text: "Performance-minded marketing for brands that want sustainable, measurable growth." },
+  { slug: "studio", icon: Video, category: "Content Creation", title: "One Content Creation Studio", text: "A production studio for video, photography, and social content under one roof." },
+  { slug: "physio", icon: Stethoscope, category: "Health‑Tech", title: "Physio@Home", text: "Physiotherapy that comes to the patient, with booking and follow-up built in." },
 ];
 
 export const SECTORS: Sector[] = [
-  { icon: "🏥", title: "Healthcare", text: "Clinics, care providers, and health startups." },
-  { icon: "🛒", title: "E‑Commerce", text: "Online stores and marketplaces." },
-  { icon: "🏠", title: "Real Estate", text: "Developers, agents, and property portals." },
-  { icon: "🎓", title: "Education", text: "Schools, colleges, and learning platforms." },
-  { icon: "🏔️", title: "Tourism & Hospitality", text: "Hotels, treks, and travel brands." },
-  { icon: "📰", title: "Media & Publishing", text: "Publishers, channels, and creators." },
+  { icon: HeartPulse, title: "Healthcare", text: "Clinics, care providers, and health startups." },
+  { icon: ShoppingCart, title: "E‑Commerce", text: "Online stores and marketplaces." },
+  { icon: Home, title: "Real Estate", text: "Developers, agents, and property portals." },
+  { icon: GraduationCap, title: "Education", text: "Schools, colleges, and learning platforms." },
+  { icon: Mountain, title: "Tourism & Hospitality", text: "Hotels, treks, and travel brands." },
+  { icon: Newspaper, title: "Media & Publishing", text: "Publishers, channels, and creators." },
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
-  { icon: "🔍", title: "Discover", text: "We learn your goals, audience, and constraints before writing a single line or script." },
-  { icon: "✏️", title: "Design", text: "Strategy, wireframes, and creative direction you can react to early." },
-  { icon: "🛠️", title: "Develop", text: "Agile sprints with regular demos, so nothing arrives as a surprise." },
-  { icon: "🚀", title: "Deliver", text: "Launch, hand-over, and support once you are live." },
+  { icon: Search, title: "Discover", text: "We learn your goals, audience, and constraints before writing a single line or script." },
+  { icon: PenTool, title: "Design", text: "Strategy, wireframes, and creative direction you can react to early." },
+  { icon: Wrench, title: "Develop", text: "Agile sprints with regular demos, so nothing arrives as a surprise." },
+  { icon: Rocket, title: "Deliver", text: "Launch, hand-over, and support once you are live." },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

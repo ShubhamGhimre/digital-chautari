@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Pill } from "@/components/ui/Pill";
 
 interface HeroProps {
-  eyebrow: string;
+  eyebrow: ReactNode;
   title: ReactNode;
   lede: string;
   actions?: ReactNode;

@@ -3,6 +3,7 @@ import { IconChip } from "@/components/ui/IconChip";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { SectionHead } from "@/components/ui/SectionHead";
+import { Target, Eye } from "lucide-react";
 import { chipColor } from "@/lib/constants";
 import { ABOUT_TILES, ROADMAP, TEAM, TRUST, VALUES } from "@/lib/data/about";
 
@@ -44,14 +45,14 @@ export function MissionVision() {
     <Section tight>
       <div className="grid gap-5 md:grid-cols-2">
         <CardShell index={0} className="p-8">
-          <IconChip icon="🎯" index={0} />
+          <IconChip icon={Target} index={0} />
           <h3 className="mt-4 font-display text-[22px] font-bold">Our mission</h3>
           <p className="mt-2 text-muted">To help organizations grow through creative strategy, honest reporting, and technology that is simple to use.</p>
         </CardShell>
         <CardShell index={1} className="p-8">
-          <IconChip icon="🔭" index={2} />
+          <IconChip icon={Eye} index={2} />
           <h3 className="mt-4 font-display text-[22px] font-bold">Our vision</h3>
-          <p className="mt-2 text-muted">To be the creative technology partner Nepal’s businesses and health providers turn to first.</p>
+          <p className="mt-2 text-muted">To be the creative technology partner Nepal&apos;s businesses and health providers turn to first.</p>
         </CardShell>
       </div>
     </Section>
@@ -86,7 +87,7 @@ export function TrustCards() {
 
 const initials = (role: string): string =>
   role
-    .split(/[\s‑]+/)
+    .split(/[\s\u2011]+/)
     .filter((w) => /^[A-Za-z]/.test(w))
     .map((w) => w[0])
     .join("")
@@ -114,7 +115,7 @@ export function TeamGrid() {
 export function Roadmap() {
   return (
     <Section dark>
-      <SectionHead eyebrow="Roadmap" title="Where we’ve been and where we’re headed" dark />
+      <SectionHead eyebrow="Roadmap" title="Where we've been and where we're headed" dark />
       <div className="relative mx-auto max-w-[900px]">
         <div className="absolute top-0 bottom-0 left-[9px] w-px bg-navy-border md:left-1/2" aria-hidden="true" />
         <ol>

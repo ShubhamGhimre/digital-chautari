@@ -14,6 +14,7 @@ import { CtaBanner } from "@/components/ui/CtaBanner";
 import { GradientText } from "@/components/ui/GradientText";
 import { Hero } from "@/components/ui/Hero";
 import { StatBar } from "@/components/ui/StatBar";
+import { Rocket } from "lucide-react";
 import { HOME_HERO_STATS } from "@/lib/data/home";
 
 export const metadata: Metadata = {
@@ -26,7 +27,12 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        eyebrow="🚀 Welcome to Digital Chautari"
+        eyebrow={
+          <>
+            <Rocket className="inline-block h-4 w-4 mr-1" aria-hidden="true" />
+            Welcome to Digital Chautari
+          </>
+        }
         title={
           <>
             We build <GradientText>digital bridges</GradientText> between ideas and impact
